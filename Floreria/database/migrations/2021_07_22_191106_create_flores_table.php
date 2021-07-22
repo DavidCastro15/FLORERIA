@@ -16,7 +16,7 @@ class CreateFloresTable extends Migration
         Schema::create('flores', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('description');
+            $table->string('description',1000);
             $table->string('price');
             $table->string('url_toImage');
             $table->timestamps();
