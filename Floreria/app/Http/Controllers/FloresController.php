@@ -15,4 +15,12 @@ class FloresController extends Controller
              'status' => 'success'
          ], 200);
     }
+
+   // public function test(){
+//$flores = Flor::all();
+    //    return response()->json([
+    //        'flores' => $flores,
+     //       'status' => 'success'
+   ///     ], 200);
+    //}
 }
