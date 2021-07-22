@@ -11,6 +11,7 @@ class CreateFloresTable extends Migration
      *
      * @return void
      */
+    //Creacion de tabla flores con sus propiedades de acuerdo a los requerimientos
     public function up()
     {
         Schema::create('flores', function (Blueprint $table) {
