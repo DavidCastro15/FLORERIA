@@ -20,3 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('flor',[FloresController::class, 'index']);
+
+//Route::get('flores',[FloresController::class, 'test']);
