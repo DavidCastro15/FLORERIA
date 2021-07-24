@@ -13,12 +13,12 @@
       </div>
       
       <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
-        <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Facebook: </span><span class="ae-u-bolder"><a href="#0" class="rk-dark-color ">Floreria MYD</a></span></p> 
+        <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Facebook: </span><span class="ae-u-bolder"><a [href]="_servicio.info.facebook" class="rk-dark-color ">{{_servicio.info.facebook}}</a></span></p> 
        
       </div>
       <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
         <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Teléfono de contacto: </span><span class="ae-u-bolder"><a href="#0" class="rk-dark-color ">2711073488 </a></span></p>
-        <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"><a href="#0" class="rk-dark-color ">FloreriaMYD@IDGS.com </a></span></p>
+        <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"><a href="mailTo:{{ _servicio.info.email}}" class="rk-dark-color ">{{_servicio.info.email}}</a></span></p>
       </div>
     </div>
   </footer>
