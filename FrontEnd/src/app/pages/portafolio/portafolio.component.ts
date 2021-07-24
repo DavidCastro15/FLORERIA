@@ -8,11 +8,14 @@ import { FloresService } from 'src/app/services/flores.service';
 })
 export class PortafolioComponent implements OnInit {
 
+  flores:any;
+
   constructor(private floreService:FloresService) { }
 
   ngOnInit(): void {
     this.floreService.getFlores().subscribe(
       res => {
+        this.flores = res;
         console.log(res);
         
       }

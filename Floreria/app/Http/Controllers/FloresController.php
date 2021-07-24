@@ -10,10 +10,7 @@ class FloresController extends Controller
 
     public function index(){
         $flores = Flor::all();
-         return response()->json([
-             'flores' => $flores,
-             'status' => 'success'
-         ], 200);
+         return response()->json($flores);
     }
 
    // public function test(){
