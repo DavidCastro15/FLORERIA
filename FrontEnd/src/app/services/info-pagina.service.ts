@@ -6,13 +6,21 @@ import { Injectable } from '@angular/core';
 })
 export class InfoPaginaService {
 
+  info: any = {};
+  cargada = false;
+
   constructor(private http:HttpClient) {
 
 console.log('servicio de InfoPagina listo');
 //leer el archivo JSON 
 this.http.get('assets/data/data-pagina.json')
 .subscribe(resp => {
-  console.log(resp);
+
+  this.cargada = true;
+  this.info = resp;
+  
+  //console.log(resp);
+  console.log( resp['email'] );
 })
 
    }
