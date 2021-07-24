@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,9 +6,14 @@ import { Injectable } from '@angular/core';
 })
 export class InfoPaginaService {
 
-  constructor() {
+  constructor(private http:HttpClient) {
 
-console.log('Info Pagina cargada ')
+console.log('servicio de InfoPagina listo');
+//leer el archivo JSON 
+this.http.get('assets/data/data-pagina.json')
+.subscribe(resp => {
+  console.log(resp);
+})
 
    }
 
