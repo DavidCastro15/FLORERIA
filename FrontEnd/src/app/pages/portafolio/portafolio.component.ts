@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FloresService } from 'src/app/services/flores.service';
 
 @Component({
   selector: 'app-portafolio',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortafolioComponent implements OnInit {
 
-  constructor() { }
+  flores:any;
+
+  constructor(private floreService:FloresService) { }
 
   ngOnInit(): void {
+    this.floreService.getFlores().subscribe(
+      res => {
+        this.flores = res;
+        console.log(res);
+        
+      }
+    )
   }
 
 }
