@@ -1,6 +1,9 @@
 {
     "titulo": "Floreria MYD",
-    "email": "FloreristeriaMYD@IDGS.com",
+    "email": "FloreriaMYD@IDGS.com",
     "nombre_corto": "Floreria",
-    "telefono": "2711073488"
+    "telefono": "2711073488",
+    "facebook": "Floreria MYD",
+    "equipo_trabajo":[]
+
 }
